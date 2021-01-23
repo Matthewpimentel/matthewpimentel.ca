@@ -195,7 +195,8 @@ h1 {
   color: rgb(201, 199, 199);
   font-size: 32px;
   font-family: Arial, Helvetica, sans-serif;
-  text-align:justify;
+  text-align:auto;
+  word-spacing: 1px;
   
   }
 
@@ -213,12 +214,12 @@ h1 {
     color: rgb(0, 0, 0);
   }
 
-  .aboutmepage {
+  .aboutpage {
     margin-top: auto;
     margin-bottom: auto;
     text-align: auto;
-    width: auto;
-    height: 5%;
+    width: 60%;
+    height: 50%;
     align-self: center;
     word-wrap: break-word;
     position: absolute;
@@ -228,7 +229,24 @@ h1 {
     border: 1px;
     padding: 10px;
     
+    
   }
+
+  @media (max-width: 1300px){
+    p{
+      font-size: 18px;
+      
+      
+    }
+    }
+
+    @media (max-width: 1300px){
+      .aboutpage{
+        height:40%;
+        width:85%
+        
+      }
+      }
 
 
 
