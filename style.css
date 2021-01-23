@@ -8,6 +8,13 @@
     color: #333;
     background-color: #fff;
 }
+.marginbot-0{margin-bottom:0 !important;}
+.marginbot-10{margin-bottom:10px !important;}
+.marginbot-20{margin-bottom:20px !important;}
+.marginbot-30{margin-bottom:30px !important;}
+.marginbot-40{margin-bottom:40px !important;}
+.marginbot-50{margin-bottom:50px !important;}
+
 
 html {
   width: 100%;
@@ -23,62 +30,59 @@ html {
   z-index: -1;
 }
 h1 {
-    font-family: sans-serif;
-    font-size: 4.2vw;
-    color: rgb(0, 60, 255);
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    color: rgb(201, 199, 199);
+    position: center;
+    
+    }
+      
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(201, 199, 199);
+    position: center;
     
 }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 2.6vw;
-    color: rgb(0, 60, 255);
-    position: fixed;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+.mainpage {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  align-self: center;
+  word-wrap: break-word;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 0px;
+  padding: 0.5px;
+  
 }
+
 #envelope{
-    color: rgb(0, 60, 255);
-    position: fixed;
-    top: 62.5%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    color: rgb(46, 56, 161);
+    letter-spacing: 0.5cm;
+    
+    
     
 }
 #git{
-  color: rgb(0, 60, 255);
-    position: fixed;
-    top: 62.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: rgb(46, 56, 161);
+  letter-spacing: 0.5cm;
+    
 }
 #linkedin{
-  color: rgb(0, 60, 255);
-    position: fixed;
-    top: 62.5%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+ color:rgb(46, 56, 161);
+ letter-spacing: 0.5cm;
 }
 
-#Linkedin{
-  position: fixed;
-    top: 62%;
-    left: 49%;
-    transform: translate(-50%, -50%)  
-}
+ 
 
-#github{
-  position: fixed;
-    top: 62%;
-    left: 53%;
-    transform: translate(-50%, -50%)  
-}
-
+/* NAV BAR*/
 .topnav {
     overflow:auto;
     background: none;
@@ -88,7 +92,7 @@ h2 {
   
   .topnav a {
     float: left;
-    color: rgb(0, 60, 255);
+    color: rgb(201, 199, 199);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -98,85 +102,136 @@ h2 {
   
   
   .topnav a:hover {
-    background-color: rgb(0, 60, 255);
+    background-color: rgb(201, 199, 199);
     color: black;
   }
+
   
-  #aboutmee {
-    color:#2962ff;
-    font-size: 34px;
-    font-family:sans-serif;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-  }
 
-  p {
-    color:#2962ff;
-    font-size: 20px;
-    font-family:sans-serif;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-
-  }
+  
 /* This handles the Mobile resolution problems*/
+  @media (min-width:1920px){
+    .mainpage{
+      line-height: 80%;
+    }
+  }
   @media (max-width: 700px){
     h1{
-    font-size: 42px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-align: center;
-    }
+      font-size: 70px;
     
+    }
   }
   @media (max-width: 700px){
     h2{
-      font-size: 14px;
+      font-size: 25px;
       padding: 1;
-      top: 54%;
     }
   }
   @media (max-width: 700px){
     #envelope{
       font-size: 28px;
       padding: 1;
-      top: 60%;
-      left: 38%;
+      
     }
   }
   @media (max-width: 700px){
     #git{
       font-size: 28px;
       padding: 1;
-      top: 60%;
-      left: 50%;
+      ;
     }
   }
   @media (max-width: 700px){
     #linkedin{
       font-size: 28px;
       padding: 1;
-      top: 60%;
-      left: 62%;
+      
+      
     }
   }
+  @media (max-width: 1300px){
+    h1{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    
+  }
+  @media (max-width: 1300px){
+    h2{
+      font-size: 20px;
+      padding: 1;
+      
+    }
+  }
+  @media (max-width: 1300px){
+    #envelope{
+      font-size: 35px;
+      padding: 1;
+      ;
+    }
+  }
+  @media (max-width: 1300px){
+    #git{
+      font-size: 35px;
+      padding: 1;
+    }
+  }
+  @media (max-width: 1300px){
+    #linkedin{
+      font-size: 35px;
+      padding: 1;
+      
+    }
+    }
+    
+  
+        
+      
+
   /*----------------Aboutme.html below--------------------*/
   p {
-    color: rgb(0, 60, 255);
+  color: rgb(201, 199, 199);
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:justify;
+  
   }
 
   #Aboutme{
-    color: rgb(0, 60, 255);
+    color: rgb(201, 199, 199);
     top: 30%;
     left: 30%;
+    font-size: 50px;
+    text-emphasis: left;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  /* will implement later */
+  
   .topnav a.active {
-    background-color: rgb(0, 60, 255);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
+
+  .aboutmepage {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: auto;
+    width: auto;
+    height: 5%;
+    align-self: center;
+    word-wrap: break-word;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px;
+    padding: 10px;
+    
+  }
+
+
+
+
+
+  
