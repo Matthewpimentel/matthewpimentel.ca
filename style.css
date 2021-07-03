@@ -1,0 +1,350 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+.marginbot-0 {
+  margin-bottom: 0 !important;
+}
+.marginbot-10 {
+  margin-bottom: 10px !important;
+}
+.marginbot-20 {
+  margin-bottom: 20px !important;
+}
+.marginbot-30 {
+  margin-bottom: 30px !important;
+}
+.marginbot-40 {
+  margin-bottom: 40px !important;
+}
+.marginbot-50 {
+  margin-bottom: 50px !important;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+#particles-js {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  z-index: -1;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  color: white;
+  position: center;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: white;
+  position: center;
+}
+
+.mainpage {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  align-self: center;
+  word-wrap: break-word;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 0px;
+  padding: 0.5px;
+}
+
+#envelope {
+  color: #51aefc;
+  letter-spacing: 0.5cm;
+}
+#git {
+  color: #51aefc;
+  letter-spacing: 0.5cm;
+}
+#linkedin {
+  color: #51aefc;
+  letter-spacing: 0.5cm;
+}
+
+/* NAV BAR*/
+.logo {
+  width: 5%;
+  height: auto;
+  float: left;
+}
+
+.topnav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: transparent;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 22px;
+  position: relative;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 8px;
+  background-color: #51aefc;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*----------------Aboutme.html below--------------------*/
+.aboutpage {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-left: 400px;
+  line-height: 2;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  top: 50%;
+}
+
+.child {
+  order: 5; /* default is 0 */
+}
+
+.child h2 {
+  margin-top: 95px;
+  color: #51aefc;
+  font-size: 40px;
+}
+
+.child p {
+  color: white;
+  font-size: 20px;
+}
+
+.child h3 {
+  color: white;
+  font-size: 25px;
+}
+
+.photo img{
+  position: relative;
+  width: 25%;
+  margin-top: 125px;
+}
+
+#git{
+  font-size: 50px;
+}
+
+#envelope{
+  font-size: 50px;
+}
+
+#linkedin{
+  font-size: 50px;
+}
+
+#git:hover{
+  color: white;
+}
+
+#envelope:hover{
+  color: white;
+}
+
+#linkedin:hover{
+  color: white; 
+}
+
+/* Mobile nav bar*/
+.mtopnav {
+  overflow: hidden;
+  background-color: #51aefc;
+  position: relative;
+  display: none;
+}
+
+.mtopnav #myLinks {
+  display: none;
+}
+
+.mtopnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mtopnav a.icon {
+  background: #51aefc;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 5%;
+}
+
+.mtopnav a:hover {
+  background-color: #51aefc;
+  color: white;
+}
+
+
+.mtopnav img{
+  width: 10%;
+}
+
+.mtopnav a.active{
+  background-color: white;
+  color: black;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav{
+      display: none;
+    }
+
+    .aboutpage{
+      top: 50%;
+      margin: 0;
+      width: 90%;
+    }
+
+    .photo img{
+      display: none;
+    }
+
+    .mtopnav{
+      display:block;
+      position: relative;
+    }
+  }
+
+/* This handles the Mobile resolution problems*/
+@media (min-width: 1920px) {
+  .mainpage {
+    line-height: 80%;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 700px) {
+  h2 {
+    font-size: 25px;
+    padding: 1;
+  }
+}
+@media (max-width: 700px) {
+  #envelope {
+    font-size: 28px;
+    padding: 1;
+  }
+}
+@media (max-width: 700px) {
+  #git {
+    font-size: 28px;
+    padding: 1;
+  }
+}
+@media (max-width: 700px) {
+  #linkedin {
+    font-size: 28px;
+    padding: 1;
+  }
+}
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+@media (max-width: 1300px) {
+  h2 {
+    font-size: 20px;
+    padding: 1;
+  }
+}
+@media (max-width: 1300px) {
+  #envelope {
+    font-size: 35px;
+    padding: 1;
+  }
+}
+@media (max-width: 1300px) {
+  #git {
+    font-size: 35px;
+    padding: 1;
+  }
+}
+@media (max-width: 1300px) {
+  #linkedin {
+    font-size: 35px;
+    padding: 1;
+  }
+}
+
+
+
